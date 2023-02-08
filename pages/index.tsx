@@ -17,8 +17,6 @@ const Home = () => {
     fetcher
   );
 
-  console.log("data", data);
-
   return (
     <>
       <nav className="bg-zinc-900 px-5 py-6 h-20">
@@ -34,7 +32,7 @@ const Home = () => {
       >
         <>
           {!isLoading && !data.error && (
-            <div className={`max-w-screen-8xl m-auto ${styles.innerContainer}`}>
+            <div className={`max-w-8xl m-auto ${styles.innerContainer}`}>
               <div className="mb-20 max-w-lg w-4/5 m-auto">
                 <h3 className={styles.heading}>stocks of each sector</h3>
                 <DonutChart chartData={data} />
