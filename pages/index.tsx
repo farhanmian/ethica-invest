@@ -26,9 +26,9 @@ const Home = () => {
       </nav>
 
       <section
-        className={`min-h-screen text-white ${true ? "pt-20" : ""} ${
-          styles.home
-        }`}
+        className={`min-h-screen text-white ${
+          data && data.error ? "pt-20" : "pt-5"
+        } ${styles.home}`}
       >
         <>
           {!isLoading && !data.error && (
